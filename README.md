@@ -332,6 +332,7 @@ A caveat worth internalizing: **check the license before shipping**. MIT/BSD/Apa
 
 - [liabru/matter-js](https://github.com/liabru/matter-js) — 2D rigid body physics in JavaScript; good for secondary motion and springy UI.
 - [piqnt/planck.js](https://github.com/piqnt/planck.js) — a 2D physics port of Box2D; more stable and closer to Box2D semantics.
+- [friction2d/friction](https://github.com/friction2d/friction) — Friction, a 2D physics engine written in Rust with WebAssembly and JavaScript bindings; worth reading for fast, deterministic rigid-body sims. GPL-3.0, so check the license before shipping it in a closed product.
 - [d3/d3-ease](https://github.com/d3/d3-ease) — the reference easing function set, written as small readable source.
 - [erich666/GraphicsGems](https://github.com/erich666/GraphicsGems) — the companion code for *Graphics Gems*; includes interpolation, easing, and motion-blur maths that is still directly usable.
 
