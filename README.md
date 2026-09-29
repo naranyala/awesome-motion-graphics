@@ -87,7 +87,7 @@ The [12 Principles of Animation](https://en.wikipedia.org/wiki/12_principles_of_
 | Solid drawing | Weight, volume, consistent perspective. |
 | Appeal | Charm lives in the silhouette and the read. |
 
-Where to internalize them: [animatoronsurvival.com](http://www.animatoronsurvival.com/) (Richard Williams' notes), the [12 Principles breakdown](https://en.wikipedia.org/wiki/12_principles_of_animation), and Dan Roark's *The Animator's Survival Kit* companion material.
+Where to internalize them: [animatoronsurvival.com](http://www.animatoronsurvival.com/) (Richard Williams' notes) and Dan Roark's companion material for *The Animator's Survival Kit*.
 
 Adjacent disciplines worth stealing from: choreography and blocking (dance timing), UI micro-interactions (state transitions), physics simulation (weight and momentum), and cinematography (camera language, focal length, depth of field).
 
@@ -127,7 +127,6 @@ Adjacent disciplines worth stealing from: choreography and blocking (dance timin
 | [OpenToonz](https://opentoonz.org/) | Free 2D animation suite | Used on Studio Ghibli films; rigging + compositing included |
 | [Tahoma2D](https://tahoma2d.org/) | Free 2D pipeline tool | MDI, columns, clean ops |
 | [Natron](https://natrongithub.github.io/) | Free open-source compositor | Node-based; Nuke/Flame-style; AE-ish tracking built in |
-| [Silhouette](https://www.silhouette-interact.com/) | Node-based rotoscoping | Bought by Boris FX; roto-first, not a general compositor |
 
 ---
 
@@ -141,8 +140,6 @@ Adjacent disciplines worth stealing from: choreography and blocking (dance timin
 | [Cinema 4D](https://www.maxon.net/cinema-4d) | Broadcast-standard 3D mograph, MoGraph system | Built-in cloner/mocha/cloner matrix; huge template culture |
 | [Maya](https://www.autodesk.com/products/maya/) | Feature film, rigging, character animation | Industry standard in film/game pipelines |
 | [Houdini](https://www.sidefx.com/products/houdini/) | Procedural everything, FX, simulations | Steepest learning curve here; procedural lifeline for power users |
-| [Cavalry 3D](https://www.cavalry.tools/) | 2.5D vector 3D, quick brand layouts | Bridges the 2D/3D gap for identity work |
-| [Unreal Engine](https://www.unrealengine.com/) | Real-time GFX, virtual production, broadcast | Sequencer + Motion Design panel; real-time rendering means faster iteration |
 | [Spline](https://spline.design/) | Web-native 3D, interactive 3D for the browser | Design + export to glTF/HTML; pairs with React Three Fiber |
 | [Substance 3D](https://www.adobe.com/products/substance3d.html) | Texturing, procedural materials | Painter, Designer, Stager |
 | [ZBrush](https://www.maxon.net/zbrush) | Digital sculpting, character heads | Pixologic-style sculpting |
@@ -171,21 +168,21 @@ Adjacent disciplines worth stealing from: choreography and blocking (dance timin
 | Format | Use when | Tools |
 | --- | --- | --- |
 | [Lottie JSON](https://airbnb.io/lottie/) | Vector UI motion: loaders, empty states, icon motion | [bodymovin](https://github.com/bodymovin/bodymovin) (AE export), [lottie-web](https://github.com/airbnb/lottie-web), [lottie-react](https://github.com/LottieFiles/lottie-react) |
-| [dotLottie](https://dotlottie.com/) | Lottie plus theming, expressions, state machines, smaller files | [dotLottie docs](https://dotlottie.com/), Lottie Creator |
-| [Rive (.riv)](https://rive.app/) | Stateful, interactive, data-bound UI and game animation | [Rive Editor](https://rive.app/), runtimes for web/iOS/Android/Flutter/Unity/Unreal |
+| [dotLottie](https://dotlottie.com/) | Lottie plus theming, expressions, state machines, smaller files | Bundled player, Lottie Creator export |
+| [Rive (.riv)](https://rive.app/) | Stateful, interactive, data-bound UI and game animation | Rive Editor plus runtimes for web/iOS/Android/Flutter/Unity/Unreal |
 | [Animated SVG](https://developer.mozilla.org/en-US/docs/Web/SVG) | Small icon/illustration motion, zero runtime | SVGator, Lottie Creator, plain CSS/SMIL |
 | [glTF / GLB](https://www.khronos.org/gltf/) | 3D assets and animated 3D on the web | Blender, Spline, Three.js, modelviewer.dev |
 | [AVIF / WebP sequences](https://developers.google.com/speed/webp) | Video-like quality where vector isn't enough | AVIF (`avifenc`), WebP animated |
 | Rive + Lottie | Pick by *interaction*, not by file size | Lottie = playback; Rive = state machines, data binding, runtime scripting |
 
-Export/authoring playgrounds: [Lottie Creator](https://creator.lottiefiles.com/), [LottieFiles](https://lottiefiles.com/), [dotLottie Gallery](https://gallery.dotlottie.com/), [Rive Community](https://rive.app/community/files).
+Export/authoring playgrounds: [Lottie Creator](https://creator.lottiefiles.com/) and the [dotLottie Gallery](https://gallery.dotlottie.com/).
 
 ### JS Libraries
 
 **General purpose**
-- [GSAP](https://gsap.com/) — the industry default for timeline animation on the web. ScrollTrigger, Flip, SplitText (now free under the GreenSock license). Source: [greensock/GSAP](https://github.com/greensock/GSAP).
-- [Motion](https://motion.dev/) (formerly Framer Motion / Motion One) — the ergonomic option for React and vanilla. Declarative, tiny, great springs. Source: [motiondivision/motion](https://github.com/motiondivision/motion).
-- [anime.js](https://animejs.com/) — lightweight, timeline-first, v4 rewritten from scratch. Source: [juliangarnier/anime](https://github.com/juliangarnier/anime).
+- [GSAP](https://gsap.com/) — the industry default for timeline animation on the web. ScrollTrigger, Flip, SplitText (now free under the GreenSock license).
+- [Motion](https://motion.dev/) (formerly Framer Motion / Motion One) — the ergonomic option for React and vanilla. Declarative, tiny, great springs.
+- [anime.js](https://animejs.com/) — lightweight, timeline-first, v4 rewritten from scratch.
 - [Popmotion](https://popmotion.io/) — the animation primitives Motion was built on.
 - [Tween.js](https://tweenjs.github.io/tween.js/) — small, classic tween engine.
 - [Vite + Motion + GSAP template](https://vitejs.dev/) — build tooling that plays nicely with all of the above.
@@ -206,11 +203,10 @@ Export/authoring playgrounds: [Lottie Creator](https://creator.lottiefiles.com/)
 - [Rough.js](https://roughjs.com/) — sketchy animated vector lines.
 - [P5.js](https://p5js.org/) — generative art and sketch-based animation.
 - [Matter.js](https://brm.io/matter-js/) / [Planck.js](https://piqnt.com/planck.js/) — 2D physics for real-feeling secondary motion.
-- [Popmotion + Canvas](https://popmotion.io/) — programmatic motion for generative work.
 
 ### 3D on the Web
 
-- [Three.js](https://threejs.org/) — the foundation. Huge ecosystem, endless examples. Source: [mrdoob/three.js](https://github.com/mrdoob/three.js).
+- [Three.js](https://threejs.org/) — the foundation, with the largest ecosystem and example set in the field.
 - [react-three-fiber](https://github.com/pmndrs/react-three-fiber) + [drei](https://github.com/pmndrs/drei) — React renderer and helpers for Three.js; the most productive way to build 3D interfaces.
 - [Babylon.js](https://www.babylonjs.com/) — full engine with physics, GUI, and WebGPU support.
 - [GLSL Sandbox](https://glslsandbox.com/) / [ShaderToy](https://www.shadertoy.com/) — shader animation playgrounds.
@@ -235,7 +231,7 @@ Export/authoring playgrounds: [Lottie Creator](https://creator.lottiefiles.com/)
 - [Unicorn Studio](https://www.unicorn.studio/) — 3D + interaction scenes embedded anywhere with no code.
 - [Webflow](https://webflow.com/) — native interactions, scroll effects, and Rive/Gsap embeds.
 - [Framer](https://www.framer.com/) — Motion built in; ship marketing sites with real motion.
-- [Spline + Webflow](https://spline.design/) — 3D scenes inside a Webflow page.
+- **Spline + Webflow** — 3D scenes embedded inside a Webflow page.
 - [No Code Supply Co](https://www.nocodesupply.co/) — a huge, well-curated index of no-code animation tools, snippets, and inspiration.
 - [Awwwards](https://www.awwwards.com/) and [Godly](https://godly.website/) — judge interaction quality by example.
 
@@ -246,11 +242,9 @@ Export/authoring playgrounds: [Lottie Creator](https://creator.lottiefiles.com/)
 - [Unreal Engine](https://www.unrealengine.com/) — Unreal has first-class *motion design* features: the Motion Design panel, Composure Sequencer, live GFX, and nDisplay walls for broadcast. Also the cheapest way to iterate on 3D motion.
 - [Unity](https://unity.com/) — Timeline, Cinemachine, and Shader Graph for real-time sequences.
 - [Godot](https://godotengine.org/) — free, open source, lighter than Unity for real-time work.
-- [Webflow Interactions](https://webflow.com/) — a browser-native "engine" for scroll and hover motion.
 - [TouchDesigner](https://derivative.ca/) — node-based real-time visuals, projection mapping, and installation work.
 - [Notch](https://www.notch.one/) — real-time 3D for live events and broadcast.
 - [Disguise](https://www.disguise.one/) — media server driving real-time stage and LED work.
-- [Cavalry](https://www.cavalry.tools/) — see 2D section; it functions like a tiny motion engine.
 
 ---
 
@@ -272,7 +266,7 @@ Export/authoring playgrounds: [Lottie Creator](https://creator.lottiefiles.com/)
 
 **Programmatic video**
 - [Remotion](https://www.remotion.dev/) — React components that render to video; version-controlled, data-driven motion.
-- [FFmpeg](https://ffmpeg.org/) — the Swiss army knife for encoding, scaling, trimming, frame extraction.
+- **FFmpeg** — encoding, scaling, trimming, and frame extraction; see *Video, Encoding, and Analysis*.
 - [Motion Canvas](https://motioncanvas.io/) — TypeScript-based programmatic animation for video and the web; a Motion+Remotion hybrid. Underrated.
 
 **Procedural pipelines**
@@ -415,8 +409,16 @@ Treat these as b-roll generators and pre-visualization tools, not as a substitut
 
 ### Topic Pages and Organizations to Explore
 
-- Topics: [motion-graphics](https://github.com/topics/motion-graphics), [motion-design](https://github.com/topics/motion-design), [after-effects](https://github.com/topics/after-effects), [lottie](https://github.com/topics/lottie), [rive](https://github.com/topics/rive), [gsap](https://github.com/topics/gsap), [threejs](https://github.com/topics/threejs), [webgl](https://github.com/topics/webgl), [shader](https://github.com/topics/shader), [creative-coding](https://github.com/topics/creative-coding), [kinetic-typography](https://github.com/topics/kinetic-typography), [blender](https://github.com/topics/blender).
-- Organizations worth watching for commits: [LottieFiles](https://github.com/LottieFiles), [rive-app](https://github.com/rive-app), [greensock](https://github.com/greensock), [motiondivision](https://github.com/motiondivision), [aescripts](https://github.com/aescripts), [AdobeDocs](https://github.com/AdobeDocs), [AE-Community](https://github.com/AE-Community), [ffmpegwasm](https://github.com/ffmpegwasm).
+- Topic pages, each with a live list of actively maintained projects:
+  - [motion-graphics](https://github.com/topics/motion-graphics) · [motion-design](https://github.com/topics/motion-design) · [after-effects](https://github.com/topics/after-effects)
+  - [lottie](https://github.com/topics/lottie) · [rive](https://github.com/topics/rive) · [kinetic-typography](https://github.com/topics/kinetic-typography)
+  - [gsap](https://github.com/topics/gsap) · [threejs](https://github.com/topics/threejs) · [webgl](https://github.com/topics/webgl)
+  - [shader](https://github.com/topics/shader) · [creative-coding](https://github.com/topics/creative-coding) · [blender](https://github.com/topics/blender)
+- Organizations worth watching for commits:
+  - Runtime formats: [LottieFiles](https://github.com/LottieFiles) · [rive-app](https://github.com/rive-app)
+  - Animation libraries: [greensock](https://github.com/greensock) · [motiondivision](https://github.com/motiondivision)
+  - After Effects tooling: [aescripts](https://github.com/aescripts) · [AE-Community](https://github.com/AE-Community)
+  - Standards and docs: [AdobeDocs](https://github.com/AdobeDocs) · [ffmpegwasm](https://github.com/ffmpegwasm)
 - Browser docs worth reading in full: [MDN Web Animations API](https://developer.mozilla.org/en-US/docs/Web/API/Web_Animations_API), [MDN SVG animation with SMIL](https://developer.mozilla.org/en-US/docs/Web/SVG/Guides/SVG_animation_with_SMIL), [web.dev animations guide](https://web.dev/articles/animations-guide).
 
 ---
@@ -430,47 +432,37 @@ Treat these as b-roll generators and pre-visualization tools, not as a substitut
 - [AEJuice free plugins](https://aejuice.com/free-plugins) — a huge curated index of free plugins and scripts.
 - [Flow](https://aescripts.com/flow/) — simple, clean curve editor for keyframes.
 - [Overlord](http://aescripts.com/overlord/) — send layers between Illustrator and AE as live vectors.
-- [Bodymovin](https://github.com/bodymovin/bodymovin) — official Lottie exporter.
 - [aescripts catalogue](https://aescripts.com/) — hundreds of code-driven tools: expressions, rigs, mograph utilities, batch exporters.
 
 ### Paid Essentials
 
 - [Mt. Mograph Motion](https://aescripts.com/mt-mograph-motion/) — keyframe accelerators, curve graphs, alignment helpers, color tools. Arguably the highest-leverage subscription in AE.
 - [Boris FX Continuum / Sapphire](https://www.borisfx.com/) — the deep effects library; Sapphire for premium looks, Continuum for utility.
-- [Mocha Pro](https://www.borisfx.com/products/mocha/) — planar tracking, roto, stabilization, 3D camera solve.
-- [Silhouette](https://www.borisfx.com/products/silhouette/) — next-gen roto.
-- [Deep Glow](https://deepglow.com/) — volumetric light/glow; the best-looking glow money can buy.
+- [Deep Glow](https://deepglow.com/) — volumetric light; the best-looking glow money can buy. Optical Glow (Red Giant line) is the lighter, more physical alternative.
 - [RE:Vision Effects](https://www.revisionfx.com/) — Twixtor, RSMB (Really Smart Motion Blur), Flicker, Deflicker, Phoenix, Persistence, Staby.
-- [Trapcode Particular](https://www.maxon.net/) — industry-standard particle system.
-- [Magic Bullet](https://www.maxon.net/en/red-giant) — grade, color, and finishing.
-- [OptiFlow](https://www.maxon.net/en/red-giant) — next-gen motion tracking.
-- [King Pin Tracker](https://www.maxon.net/en/red-giant) — fast, AE-native surface tracking for everyday work.
+- [Red Giant](https://www.maxon.net/red-giant) — bundles **Trapcode Particular** (the industry-standard particle system), **Magic Bullet** (grade and finish), **OptiFlow** (motion tracking), and **King Pin Tracker** (fast, AE-native surface tracking). Most of the line now sits behind a Maxon One subscription.
 - [Motion Bro](https://motionbro.net/) — preset and transition library for AE/Premiere; excellent when the clock is ticking.
-- [Video Copilot](https://www.videocopilot.net/) — Element 3D, Saber, Fire of Babylon; a school unto itself.
+- [Video Copilot](https://www.videocopilot.net/) — Element 3D, Saber, Fire of Babylon, and Auto-Trace bitmap for vectorising raster footage; a school unto itself.
 - [Rowbyte](https://rowbyte.com/) — Plexus (great particle/3D starter), Aura, TV Distortion Bundle.
-- [Auto-Trace bitmap](https://www.videocopilot.net/) — stylise raster footage into vector animation.
 - [Rubberhose](https://aescripts.com/rubberhose/) — the famous arm-waving system.
 - [AstroSeismic](https://cutpile.com/) — a rig manager for After Effects character animation.
 
 ### Bundles and Directories
 
-- [AE Plugins](https://www.aeplugins.com/) — browsable directory of After Effects and FxPlug plugins.
-- [Adobe Partner Finder](https://helpx.adobe.com/after-effects/using/plug-ins.html) — certified developers.
-- [Motion Array Plugin Finder](https://motionarray.com/) — filters and reviews across the plugin ecosystem.
+- Adobe's own **Partner Finder** — certified plug-in developers.
+- [AE Plugins](https://aeplugins.com/) — browsable directory of After Effects and FxPlug plug-ins.
 
 ---
 
 ## Tracking, Cleanup, and VFX Tools
 
 - [Mocha Pro](https://www.borisfx.com/products/mocha/) — planar tracking; tracks surfaces through changing light, motion blur, and occlusion.
-- [Silhouette](https://www.borisfx.com/products/silhouette/) — roto and paint.
-- [PFTrack](https://www.foundry.com/products) — The Foundry's tracker; rock solid.
+- [Silhouette](https://www.borisfx.com/products/silhouette/) — next-gen roto and paint; the tool most comps graduate to.
+- [PFTrack](https://www.foundry.com/products) — The Foundry's tracker; rock solid in shots where Mocha struggles.
 - [SynthEyes](https://www.syntheyes.net/) — budget-friendly planar tracking.
 - [Cleanup](https://www.innospace.io/products/cleanup) or [Neat Video](https://www.neatvideo.com/) — temporal denoise and dust-bust.
-- [RE:Vision Effects](https://www.revisionfx.com/) — Twixtor (slow motion), RSMB (motion blur), Flicker, Deflicker.
-- [Deep Glow](https://deepglow.com/), [Optical Glow](https://www.maxon.net/en/red-giant) — physically motivated bloom.
-- [RealFlow](https://www.maxon.net/) — fluid and particle simulation for hero shots.
-- [Katana](https://www.foundry.com/products) — production-grade compositing in Resolve.
+- **RealFlow** — fluid and particle simulation for hero shots; bundled with Cinema 4D.
+- [Katana](https://www.foundry.com/products/katana) — production-grade compositing inside Resolve.
 
 ---
 
@@ -482,7 +474,7 @@ Treat these as b-roll generators and pre-visualization tools, not as a substitut
 - [Corona](https://corona-renderer.com/) — fast, architectural-leaning, now 3ds Max/Maya/C4D.
 - [V-Ray](https://www.v-ray.com/) — physically accurate, used across archviz and product.
 - [Arnold](https://www.arnoldrenderer.com/) — physically based path tracer from Solid Angle, used on most feature films.
-- [Karma](https://www.maxon.net/cinema-4d) — Maxon's production renderer in C4D.
+- **Karma** — Maxon's production renderer, built into Cinema 4D.
 - [Cycles](https://docs.blender.org/manual/en/latest/render/cycles/index.html) — Blender's path tracer.
 - [LuxCore](https://luxcorerenderer.org/) — open-source, spectral, physically correct.
 
@@ -490,8 +482,6 @@ Treat these as b-roll generators and pre-visualization tools, not as a substitut
 - [DaVinci Resolve](https://www.blackmagicdesign.com/products/davinciresolve) — free edition includes Fusion, Fairlight, and a full grading suite. The most capable free post stack in existence.
 - [Fusion](https://www.blackmagicdesign.com/products/davinciresolve/fusion) — node-based compositing, free and scriptable with Python.
 - [Nuke](https://www.foundry.com/products/nuke) — the film/TV standard for compositing and tracking.
-- [Silhouette](https://www.borisfx.com/products/silhouette/) — see above.
-- [Remotion](https://www.remotion.dev/) — program-composited video from code.
 - [Premiere Pro](https://www.adobe.com/products/premiere.html) — the editor; pair with Essential Graphics for simple GFX.
 - [DaVinci Color page](https://www.blackmagicdesign.com/products/davinciresolve/color) — grading, and a genuinely great place to finish motion work.
 
@@ -499,10 +489,9 @@ Treat these as b-roll generators and pre-visualization tools, not as a substitut
 
 ## Color Grading and LUTs
 
-- [DaVinci Resolve Color](https://www.blackmagicdesign.com/products/davinciresolve/color) — free, node-based, industry-proven.
 - [ACES](https://www.acescentral.com/) — the Academy Color Encoding System; standard for film and high-end motion work.
 - [OpenColorIO](https://opencolorio.readthedocs.io/en/latest/) — open-source color management, the standard under the hood.
-- [colour-science.org](https://www.colour-science.org/) — Python library for color science and conversion.
+- **colour-science.org** — a Python library for color science and conversion.
 - [LUTify.me](https://lutify.me/) — free LUT pack of every major film look.
 - [Creative Bloop](https://creativebloop.com/luts/) — curated free LUT packs.
 - [Ground Control](https://groundcontrol.fun/) — free LUTs with a focus on experimental looks.
@@ -523,10 +512,10 @@ Treat these as b-roll generators and pre-visualization tools, not as a substitut
 - [Glyphs](https://glyphsapp.com/) — macOS font editor; great for variable font and animated glyph work.
 
 **Type-specific motion**
-- [Adobe Variable Fonts](https://helpx.adobe.com/illustrator/using/variable-fonts.html) — animate the `wght` and `wdth` axes for real type motion in Illustrator, AE, or the web.
-- [Fontshare variable fonts](https://www.fontshare.com/) — variable families built for display motion.
+- **Variable fonts** — animating the `wght` and `wdth` axes is the cheapest route to real type motion in Illustrator, AE, or the web.
+- **Fontshare variable families** — display faces with wide weight axes, built for kinetic type.
 - [Kinetic typography references](https://www.behance.net/galleries/typography/motion-graphics) — always worth a scroll.
-- [Type Animation with LottieFiles](https://lottiefiles.com/blog/) — text animation as Lottie for web onboarding.
+- Text animation as Lottie — the LottieFiles blog covers the practical side of shipping kinetic type on the web.
 
 ---
 
@@ -544,7 +533,7 @@ Treat these as b-roll generators and pre-visualization tools, not as a substitut
 
 **Beat and music tooling**
 - Ableton Live / Logic / Reaper for spotting beats and building a comp against a track.
-- In AE, mark beats manually, then use `linear()` and expressions to snap keyframes to markers — or use a beat-detection script from [AEJuice](https://aejuice.com/) and [aescripts](https://aescripts.com/).
+- In AE, mark beats manually, then use `linear()` with expressions to snap keyframes to markers; AEJuice and aescripts both carry beat-detection scripts.
 - [Beatport](https://www.beatport.com/) and [SongBPM](https://www.songbpm.com/) for tempo data when licensing stems.
 - Loudness matters: deliver broadcast at roughly **-24 LKFS** integrated, streaming around **-14 LUFS** (check the current [Spotify/YouTube normalization specs](https://www.youtube.com/watch?v=jfKfPfyJRdk) before mastering).
 
@@ -555,7 +544,7 @@ Treat these as b-roll generators and pre-visualization tools, not as a substitut
 **Stocks and footage**
 - [Mixkit](https://mixkit.co/) — free, no attribution, motion-background friendly.
 - [Pexels Videos](https://www.pexels.com/videos/) and [Coverr](https://coverr.co/) — free stock video.
-- [Videvo](https://www.videvo.net/), [Storyblocks](https://www.storyblocks.com/), [Artgrid](https://artgrid.io/), [Envato Elements](https://elements.envato.com/), [Motion Array](https://motionarray.com/), [Pond5](https://www.pond5.com/).
+- [Videvo](https://www.videvo.net/), [Storyblocks](https://www.storyblocks.com/), [Artgrid](https://artgrid.io/), [Envato Elements](https://elements.envato.com/), [Pond5](https://www.pond5.com/).
 - [FootageCouch](https://footagecouch.com/) — free HD clips, good for backgrounds.
 
 **Motion templates**
@@ -563,23 +552,20 @@ Treat these as b-roll generators and pre-visualization tools, not as a substitut
 - [MotionElements](https://www.motionelements.com/) — After Effects templates, many free.
 - [Envato Elements](https://elements.envato.com/video-templates) — Premiere/AE templates.
 - [VideoHive](https://videohive.net/) — AE templates with a strong character-animation scene.
-- [PremiumBeat](https://www.premiumbeat.com/) — stock + templates.
 - [RocketStock](https://rocketstock.com/) — free AE templates and plugins.
 
 **Animated assets, icons, illustrations**
 - [LottieFiles](https://lottiefiles.com/free-animations) — thousands of free Lottie animations; best source for production-ready UI motion.
-- [dotLottie Gallery](https://gallery.dotlottie.com/) — themed, interactive examples.
 - [Icons8](https://icons8.com/animated-icons) — animated icons in Lottie and GIF.
 - [Blush](https://blush.design/) — animated illustration packs you can customize.
 - [Storyset](https://storyset.com/) by Freepik — animated illustrations with color customization.
 - [unDraw](https://undraw.coil.io/illustration) — SVG illustrations (color-customizable), animate the SVGs.
 - [ManyPixels](https://manypixels.co/gallery) — animated illustration galleries.
 - [Haikei](https://haikei.app/) — SVG background generators to animate.
-- [Lottie Animations by Airbnb](https://airbnb.io/lottie/) — reference-quality UI motion.
 - [Fake3D](https://fake3d.com/) and [3Dicons](https://3dicons.org/) — 3D icon packs to spin and float.
 
 **Audio-reactive visual sets**
-- [AudioViz](https://www.audiomotion.app/) and [Visualiser Motion templates](https://motionarray.com/) — reference and templates for audio-reactive UI.
+- [AudioViz](https://www.audiomotion.app/) — reference builds for audio-reactive UI; Motion Array's visualiser packs are the practical version.
 
 ---
 
@@ -593,7 +579,7 @@ Treat these as b-roll generators and pre-visualization tools, not as a substitut
 
 **Vector and interactive**
 - **Lottie JSON** — the default for UI motion. Watch the [Lottie format docs](https://lottiefiles.com/what-is-lottie/) and keep files small.
-- **dotLottie** — adds theming, expressions, and state machines; smaller at runtime. See [the dotLottie spec](https://dotlottie.com/).
+- **dotLottie** — adds theming, expressions, and state machines, and ships smaller at runtime.
 - **Rive (.riv)** — binary, stateful, data-bindable; requires the Rive runtime.
 - **Animated SVG** — great for small, self-contained icons.
 
@@ -658,7 +644,7 @@ Use these for pre-visualization, style exploration, and cleanup acceleration —
 - [Pika](https://pika.art/) — short, stylizable generations and edits.
 - [Adobe Firefly](https://firefly.adobe.com/) — commercially safer-trained generation, and it lives inside the Adobe apps you already use.
 - [Topaz](https://www.topazlabs.com/) — upscaling, frame interpolation, and denoise; the practical tool for making a rough render presentable.
-- [Resolve's built-in tools](https://www.blackmagicdesign.com/products/davinciresolve) — DaVinci's neural engine does interpolation, denoise, and upscale for free.
+- **Resolve's built-in tools** — DaVinci's neural engine does interpolation, denoise, and upscale for free.
 
 ---
 
@@ -669,7 +655,7 @@ Use these for pre-visualization, style exploration, and cleanup acceleration —
 - [SMPTE](https://www.smpte.org/) — timecode, frame rates, and interchange standards.
 - [CTA](https://www.ctas.org/) — US caption and accessibility requirements; relevant if you deliver for broadcast or public spaces.
 - [ATSC / safe areas](https://www.atsc.org/) — action-safe and title-safe regions. In motion graphics these matter because titles must survive overscan on every downstream device.
-- [MDN Web Animations API](https://developer.mozilla.org/en-US/docs/Web/API/Web_Animations_API) and [caniuse.com](https://caniuse.com/) — check support before committing to a technique.
+- [caniuse.com](https://caniuse.com/) and the MDN Web Animations API guide — check support before committing to a technique.
 - Frame rates: decide 24, 25, 30, 50, or 60 at the project level and never mix them inside one comp. Most broadcast and social delivery is 25/30; slow-motion workflows want 60 with shutter control.
 - Deliver a spec sheet with every master: resolution, aspect ratio, frame rate, color space, loudness, codec, bit depth, alpha or no alpha.
 
@@ -688,7 +674,7 @@ Use these for pre-visualization, style exploration, and cleanup acceleration —
 - [Annecy](https://www.annecyfestival.com/) — animation at the highest level; watch the shorts for reference.
 - [SIGGRAPH](https://www.siggraph.org/) — the technical conference; the Advances in Real-Time Rendering course is world class.
 - Blend Conference — motion, VFX, and games animation in one room.
-- [TouchDesigner](https://derivative.ca/) and [Resolume](https://resolume.com/) community events — the realtime side of the industry.
+- **TouchDesigner** and [Resolume](https://resolume.com/) community events — the realtime side of the industry.
 
 **Archives**
 - [Prelinger Archives](https://archive.org/details/prelinger) — tens of thousands of industrial, educational, and title-sequence films, public domain. Arguably the richest motion reference library that exists.
@@ -732,14 +718,14 @@ Use these for pre-visualization, style exploration, and cleanup acceleration —
 
 **Certification**
 - Adobe Certified Expert / Professional ([certification](https://training.adobe.com/certification)) — After Effects, Premiere.
-- Maxon Certified ([Maxon Academy](https://www.maxon.net/)) — Cinema 4D, Redshift.
+- Maxon Certified ([Maxon training and Cineversity](https://www.maxon.net/learn)) — Cinema 4D, Redshift.
 
 **Technical and graphics fundamentals** — required if you want to go beyond a timeline.
 - [Learn OpenGL](https://learnopengl.com/) — the best free modern OpenGL course; shading, transformations, and the math you keep re-learning.
 - [The Book of Shaders](https://thebookofshaders.com/) — GLSL taught through live interactive examples. The fastest way to stop treating shaders as magic.
 - [WebGL Fundamentals](https://webglfundamentals.org/) — WebGL explained properly, with diagrams.
 - [Three.js Learning Journey](https://threejs.org/manual/#en/introduction) — the official manual, plus a huge set of annotated examples.
-- [Graphics Gems](https://github.com/erich666/GraphicsGems) — the code behind the classic book; still the clearest source on interpolation and easing maths.
+- Graphics Gems — the code behind the classic book, and still the clearest source on interpolation and easing maths. See [Physics, Easing, and Procedural Utilities](#physics-easing-and-procedural-utilities).
 
 ### Free Courses
 
@@ -747,8 +733,7 @@ Use these for pre-visualization, style exploration, and cleanup acceleration —
 - [Motion Design School — free lessons](https://motiondesign.school/) — free lessons and monthly competitions.
 - [Adobe tutorials](https://helpx.adobe.com/after-effects/tutorials.html) — official, free, and genuinely good.
 - [Blender.org — free manual and courses](https://www.blender.org/support/) and the [Blender Guru](https://www.youtube.com/@BlenderGuru) channel.
-- [LottieFiles Academy](https://lottiefiles.com/blog/) — free articles on Lottie best practices.
-- [Rive docs](https://rive.app/docs) and [Rive Academy](https://rive.app/community/files) — free tutorials and community files to remix.
+- [Rive docs](https://rive.app/docs) — free tutorials and API reference; community files are linked in *Runtime Formats*.
 - [Creative COW blog and articles](https://blogs.creativecow.net/) — free technique articles going back over a decade.
 - [Animatron](https://animatron.com/) — free browser-based rigging and animation; great for experimenting without a license.
 
@@ -764,7 +749,7 @@ Use these for pre-visualization, style exploration, and cleanup acceleration —
 - [Blender Guru](https://www.youtube.com/@BlenderGuru) — Blender for everyone.
 - [Loop Learning](https://www.youtube.com/@LoopLearning) — practical Adobe tutorial workflows.
 - [Adobe Creative Cloud](https://www.youtube.com/@AdobeCreativeCloud) — official feature walkthroughs.
-- [Rive](https://www.youtube.com/@RiveApp) and [Cavalry](https://www.cavalry.tools/) — official channels for the newer interactive tools.
+- [Rive](https://www.youtube.com/@RiveApp) — official channel; Cavalry publishes its own tutorials in-product.
 
 ---
 
@@ -780,7 +765,7 @@ Use these for pre-visualization, style exploration, and cleanup acceleration —
 - [LottieFiles Blog](https://lottiefiles.com/blog/) — the best technical writing on Lottie performance and format.
 - [Rive Blog](https://rive.app/blog) — interactive graphics engineering, including data binding and performance.
 - [Spline Blog](https://spline.design/) — 3D for the web.
-- [Motionographer Newsletter] — subscribe via [Motionographer](https://motionographer.com/) or on Substack.
+- **Motionographer newsletter** — subscribe from the site or via Substack; it aggregates studio news and calls for work.
 - [A List Apart](https://alistapart.com/) — long-form web craft; great intersection of motion and interface.
 
 ---
@@ -794,7 +779,7 @@ Use these for pre-visualization, style exploration, and cleanup acceleration —
 - [Vimeo — Staff Picks](https://vimeo.com/staffpicks) — curation over volume.
 - [Vimeo — Best Motion Design channel](https://vimeo.com/channels/bestmotiondesign) — community-curated showreels.
 - [Motionographer Showreel](https://motionographer.com/showreel) — a curated reel of the year's best.
-- [School of Motion — 500 Studios ebook](https://www.schoolofmotion.com/free) — a free, 500-page compendium of motion studios across 41 countries.
+- **School of Motion — 500 Studios ebook** — a free, 500-page compendium of motion studios across 41 countries; available in *Free Courses*.
 - [Pinterest](https://www.pinterest.com/search/pins/?q=motion%20graphics) and [Are.na](https://www.are.na/) — moodboard-grade reference building.
 
 **Motion-specific inspiration**
@@ -804,7 +789,7 @@ Use these for pre-visualization, style exploration, and cleanup acceleration —
 
 **Showreel practice**
 - Keep showreels under 60 seconds, cut to the beat, lead with your strongest 3 seconds, and never show unfinished work.
-- Reel format guides: [Motionographer](https://motionographer.com/), [School of Motion's Reel Guide](https://www.schoolofmotion.com/blog).
+- Reel format guides: the [School of Motion blog](https://www.schoolofmotion.com/blog) and the Motionographer annual showreel roundups.
 
 ---
 
@@ -816,7 +801,7 @@ Use these for pre-visualization, style exploration, and cleanup acceleration —
 - [Blender Stack Exchange](https://blender.stackexchange.com/) — rigorous Q&A for Blender.
 - [Blender Artists](https://www.blenderartists.org/) — forum and challenges.
 - [Motion Design Discord servers](https://discord.com/) — search for After Effects, Lottie, and Rive communities; LottieFiles and Rive both run active Discords.
-- [Motionographer community + newsletter](https://motionographer.com/) — industry discussion and job board.
+- **Motionographer community and newsletter** — industry discussion alongside its job board.
 - [School of Motion community](https://www.schoolofmotion.com/community) — critique and feedback from working designers.
 - [LottieFiles Community](https://lottiefiles.com/community) and [Rive Community](https://rive.app/community/files) — share files, get feedback, find collaborators.
 - Discos: search Discord for current After Effects, Lottie, and Rive servers — they open and close, so verify invite links before sharing them.
@@ -836,7 +821,7 @@ Use these for pre-visualization, style exploration, and cleanup acceleration —
 **Finding work**
 - [Upwork](https://www.upwork.com/) — the biggest freelance marketplace; filter for motion design.
 - [Fiverr](https://www.fiverr.com/) — fixed-price motion gigs; good for quick turnarounds.
-- [Motionographer job board](https://motionographer.com/) — industry jobs and freelance calls.
+- [Motionographer job board](https://motionographer.com/) — industry jobs, freelance calls, and community threads on rates.
 - [ProductionHUB](https://www.productionhub.com/) — broadcast, post, and creative production roles.
 - [AIGA](https://www.aiga.org/) and [Design Jobs Board](https://www.designjobsboard.com/) — graphic and motion design roles.
 - [Work with Indies](https://workwithindies.com/) — studio roles at indie game and animation companies.
@@ -846,7 +831,6 @@ Use these for pre-visualization, style exploration, and cleanup acceleration —
 **Pricing and career**
 - Read the [Motion Design Hiring Guide](https://www.schoolofmotion.com/free) (free, built from 13,287 job listings) for real salary bands and role definitions.
 - Motion design contracts usually bill by project, by day rate, or by animated second. Always define revisions, source-file delivery, and usage/licensing terms in writing.
-- [Motionographer's freelance and pricing discussion](https://motionographer.com/) — community threads on rates.
 
 ---
 
@@ -951,7 +935,7 @@ A short map of the vocabulary you will meet across these links.
 - **Cloth sim / dynamics** — simulated secondary motion: cloth, hair, ropes, debris.
 - **Motion system** — a documented set of durations, easings, and transitions that makes motion consistent across a product or brand.
 - **Sound design** — the foley, ambience, and score that make motion feel physical. Underrated relative to its impact.
-- **Beat sync** — aligning transitions and accents to the music grid; in real-time engines this comes from onset detection ([essentia.js](https://github.com/MTG/essentia.js) does this in the browser).
+- **Beat sync** — aligning transitions and accents to the music grid; in real-time engines this comes from onset detection, which essentia.js does in the browser.
 
 ---
 
